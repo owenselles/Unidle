@@ -17,6 +17,10 @@ assertion.
 
 Requires macOS 14 or later.
 
+Source-available, not open source: you may build and run it for your own
+personal use, including on a work machine, and modify it to do so. You may not
+redistribute or sell it. See [LICENSE](LICENSE).
+
 ## Building it yourself
 
 You need [Xcode](https://developer.apple.com/xcode/) and

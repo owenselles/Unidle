@@ -1,0 +1,49 @@
+Unidle — Personal Use Licence
+
+Copyright © 2026 Owen Selles. All rights reserved.
+
+The source code of Unidle is published so that individuals can build and run it
+for themselves. This is not open source software, and the rights granted below
+are limited.
+
+
+PERMITTED
+
+You may:
+
+  * download, build, and run this software for your own personal use,
+    including on a computer you use for work;
+
+  * modify it for that purpose — this expressly includes changing the team
+    identifier and bundle identifiers in project.yml, which is necessary to
+    sign a build with your own Apple developer account;
+
+  * keep private copies of your modifications.
+
+
+NOT PERMITTED
+
+Without prior written permission from the copyright holder, you may not:
+
+  * redistribute this software or any modified version of it, in source or
+    binary form — this includes publishing it, hosting builds for download,
+    sharing a compiled copy with others, and submitting it to any app store
+    or software marketplace;
+
+  * sell, licence, rent, or otherwise commercialise this software or any work
+    derived from it, or incorporate it into a product or service offered to
+    others;
+
+  * remove or alter this licence or the copyright notice.
+
+If you would like to do any of the above, ask. Permission may well be granted.
+
+
+NO WARRANTY
+
+This software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement. In no event shall the
+copyright holder be liable for any claim, damages, or other liability, whether
+in an action of contract, tort, or otherwise, arising from, out of, or in
+connection with the software or the use or other dealings in the software.
