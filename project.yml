@@ -1,0 +1,65 @@
+name: Unidle
+options:
+  bundleIdPrefix: com.owenselles
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: QJBAS8766Q
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "4"
+
+targets:
+  Unidle:
+    type: application
+    platform: macOS
+    sources:
+      - Sources
+      - Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.owenselles.unidle
+        PRODUCT_NAME: Unidle
+        INFOPLIST_FILE: Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Resources/Unidle.entitlements
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    scheme:
+      testTargets:
+        - UnidleTests
+
+  UnidleTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests
+    dependencies:
+      - target: Unidle
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.owenselles.unidle.tests
+        GENERATE_INFOPLIST_FILE: YES
+
+  # Same code, notarized direct download instead of the App Store: no sandbox,
+  # and a distinct bundle id so macOS treats it as its own Accessibility client.
+  UnidleDirect:
+    type: application
+    platform: macOS
+    sources:
+      - Sources
+      - Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.owenselles.unidle.direct
+        PRODUCT_NAME: UnidleDirect
+        INFOPLIST_FILE: Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Resources/UnidleDirect.entitlements
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

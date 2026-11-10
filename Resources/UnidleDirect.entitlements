@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Direct-distribution build. The App Store target uses
+	     Unidle.entitlements, which turns the sandbox on; a notarized
+	     direct download does not require it. -->
+</dict>
+</plist>
